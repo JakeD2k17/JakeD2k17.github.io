@@ -1,0 +1,96 @@
+        a:link {
+            color:blue
+        }
+        a:visited {
+            color:purple;
+        }
+        a:hover {
+            color:dodgerblue
+        }
+    #history {
+        
+        height: 250px;
+        width: 750px;
+        margin: 10px; 10px; 5px
+        padding: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 10px solid;
+        background-color:tan;
+        border-style: ridge;
+        border-radius: 20px;
+            
+        }
+            
+    #smallbox {
+			      
+        height: 110px;
+        width: 159px;
+        margin: 10px; 5px; 5px
+        padding: 5px;
+        border: 10px solid;
+        border-style: ridge;
+        background-color:tan;
+        border-radius: 20px;
+        text-align: center;
+			      
+            }
+        
+    #PageBorder {
+        
+        width: 1000px;
+        height: 1000px;
+        border: 20px solid tan;
+        padding: 10px;
+        border-radius: 20px;
+        border-style: ridge;
+            
+        }
+        
+    #Activities {
+            
+        width:354px;
+        height:150px;
+        margin: 10px; 10px;5px;
+        padding: 5px;
+        border:10px solid;
+        border-style: ridge;
+        border-radius: 20px;
+        background-color: tan;
+        text-align: center
+            
+        }
+        
+    #Work   {
+            
+        width: 760px;
+        height: 200px;
+        padding: 10px;
+        border: 10px solid;
+        border-style: ridge;
+        border-radius: 20px;
+        background-color: tan;
+        margin: 10px; 10px; 5px;
+            
+        }
+        
+    #center {
+        text-align: center
+        }
+        
+    .floating-box {
+        display: inline-block;
+        }
+        
+    .button {
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        color:greenyellow;
+        padding; 15px;30px;
+        font-size: 16px;
+        }
+        
+    .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: lightblue;
+        }
