@@ -9,7 +9,7 @@
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
-.w3-row-padding img {margin-bottom: 12px}
+.row-padding img {margin-bottom: 12px}
     
 .w3-sidenav {width: 120px;background: #222;}
     
@@ -101,46 +101,98 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   from {opacity: .4} 
   to {opacity: 1}
 }
+    
+.small{font-size:12px!important} 
+    
+.dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}    
+    
+.text-white,.hover-text-white:hover{color:#fff!important}
+    
+.text-black,.hover-text-black:hover{color:#000!important}
+    
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+    
+.text-light-grey,.hover-text-light-grey:hover,.text-light-gray,.hover-text-light-gray:hover{color:#f1f1f1!important}
+    
+.center{text-align:center!important}
+    
+.left{float:left!important}
+    
+.justify{text-align:justify!important}
+    
+.content{max-width:980px;margin:auto}
+    
+.padding-large{padding:12px 24px!important}
+    
+.xxlarge{font-size:36px!important}
+    
+.margin-right{margin-right:16px!important}
+    
+.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+    
+.padding-32{padding-top:32px!important;padding-bottom:32px!important}
+    
+.container{padding:0.01em 16px}
+    
+.top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
+    
+.opacity,.hover-opacity:hover{opacity:0.60;-webkit-backface-visibility:hidden}
+.opacity-off,.hover-opacity-off:hover{opacity:1;-webkit-backface-visibility:hidden}
+.opacity-max{opacity:0.25;-webkit-backface-visibility:hidden}
+.opacity-min{opacity:0.75;-webkit-backface-visibility:hidden}
+    
+.jumbo{font-size:64px!important}
+    
+.large{font-size:18px!important}
+    
+.section{margin-top:16px!important;margin-bottom:16px!important}
+    
+.hide-large{display:none!important}
+    
+.navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+    
+.half{width:49.99999%}
+    
 </style>
-<body class="w3-dark-grey">
+<body class="dark-grey">
 
-<nav class="w3-sidenav w3-center w3-small w3-hide-small">
+<nav class="w3-sidenav center small">
   <!-- <img src="https://jaked2k17.github.io/Resume/6844copy.jpg" style="width:100%"> -->
-  <a class="w3-padding-large w3-hover-black" href="#">
-    <i class="fa fa-home w3-xxlarge"></i>
+  <a class="padding-large hover-black" href="#">
+    <i class="fa fa-home xxlarge"></i>
     <p>Home</p>
   </a>
-  <a class="w3-padding-large w3-hover-black" href="#about">
-    <i class="fa fa-user w3-xxlarge"></i>
+  <a class="padding-large hover-black" href="#about">
+    <i class="fa fa-user xxlarge"></i>
     <p>About</p>
   </a>
-  <a class="w3-padding-large w3-hover-black" href="#work">
-    <i class="fa fa-laptop w3-xxlarge"></i>
+  <a class="padding-large hover-black" href="#work">
+    <i class="fa fa-laptop xxlarge"></i>
     <p>Work Experience</p>
   </a>
-  <a class="w3-padding-large w3-hover-black" href="#photos">
-    <i class="fa fa-eye w3-xxlarge"></i>
+  <a class="padding-large hover-black" href="#photos">
+    <i class="fa fa-eye xxlarge"></i>
     <p>Photos</p>
   </a>
-  <a class="w3-padding-large w3-hover-black" href="#contact">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+  <a class="padding-large hover-black" href="#contact">
+    <i class="fa fa-envelope xxlarge"></i>
     <p>Contact</p>
   </a>
 </nav>
 
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <li class="w3-left" style="width:25% !important"><a href="#">Home</a></li>
-            <li class="w3-left" style="width:25% !important"><a href="#about">About</a></li>
-            <li class="w3-left" style="width:25% !important"><a href="work">Work Experience</a></li>
-            <li class="w3-left" style="width:25% !important"><a href="#photos">Photos</a></li>
-            <li class="w3-left" style="width:25% !important"><a href="#contact">Contact</a></li>
+    <div class="top hide-large" id="myNavbar">
+        <ul class="navbar black opacity hover-opacity-off center small">
+            <li class="left" style="width:25% !important"><a href="#">Home</a></li>
+            <li class="left" style="width:25% !important"><a href="#about">About</a></li>
+            <li class="left" style="width:25% !important"><a href="work">Work Experience</a></li>
+            <li class="left" style="width:25% !important"><a href="#photos">Photos</a></li>
+            <li class="left" style="width:25% !important"><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <div class="w3-padding-large" id="main">
-        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-            <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Jake Durr</h1>
+    <div class="padding-large" id="main">
+        <header class="container padding-32 center black" id="home">
+            <h1 class="jumbo"> Jake Durr</h1>
             <p></p>
         </header>
 
@@ -196,36 +248,36 @@ function showSlides() {
 </script>
         
         
-  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
-    <h2 class="w3-text-white">My History</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <div class="content justify text-black padding-64" id="about">
+    <h2 class="text-white">My History</h2>
+    <hr style="width:200px" class="opacity">
     <p>I am 18 years old and I am currently a senior at Arapahoe Highschool. I have lived in Colorado my whole life but I travel all the time. My life has been filled with snowboarding, dancing, mountain biking, wrestling and many other sports. Although sports were a big part of my life, I also included myself in Boy Scouts, Volunteer Work and Programming.</p>
     <p>After graduating High School I am attending <a href="https://www.colostate.edu/" target="_blank">Colorado State University</a>studying Computer Science in a Security field. I plan on receiving my Bachelor in Science for Computer Science and continue on to learn in more of a security field.</p>
     </div>
     <div><strong><u>Dancing</u></strong></div>
-          <p class="w3-text-black">- I started dancing in about 2007 where I learned some different styles including Hip Hop, Contemporary, and Breakdancing. Over the years I have gotten the chance to perform at Red Rocks, a body building competition, a couple marathons, and many other shows. I have had the chance to be a part of a dance crew. We would travel around and perform or compete against other crews. I am now teaching/subbing dance classes at a local studio. My students are around ages 6-20. I will continue dancing in college and throughout my life because it brings me happiness.</p>
+          <p class="text-black">- I started dancing in about 2007 where I learned some different styles including Hip Hop, Contemporary, and Breakdancing. Over the years I have gotten the chance to perform at Red Rocks, a body building competition, a couple marathons, and many other shows. I have had the chance to be a part of a dance crew. We would travel around and perform or compete against other crews. I am now teaching/subbing dance classes at a local studio. My students are around ages 6-20. I will continue dancing in college and throughout my life because it brings me happiness.</p>
     <div><strong><u>Web Design</u></strong></div>
-        <p class="w3-text-black">- After taking a Web Design class at my high school, I started designing websites of my own. I have created many websites and created this resume using HTML, CSS, and JavaScript. I written all the code for this website as an example of some of my experience.</p>
+        <p class="text-black">- After taking a Web Design class at my high school, I started designing websites of my own. I have created many websites and created this resume using HTML, CSS, and JavaScript. I written all the code for this website as an example of some of my experience.</p>
     <div><strong><u>Eagle Scout</u></strong></div>
-        <p class="w3-text-black">- After about 7 years in Boy Scouts, I have recieved the "Eagle Scout" Rank. My final project was building a sensory table for the Adams Camp Foundation. </p>
+        <p class="text-black">- After about 7 years in Boy Scouts, I have recieved the "Eagle Scout" Rank. My final project was building a sensory table for the Adams Camp Foundation. </p>
     <div><strong><u>Wrestling</u></strong></div>
-        <p class="w3-text-black">- I wrestled for about 6-7 years throughout middle school and high school. During my high school wrestling career, I volunteered at a nearby middle school and helped younger wreslters during their practice. Then later, I volunteered at a kids wrestling club put on by my high school. I earned a varsity letter and a CHSAA Scholar Athlete Award my senior year but I am not wrestling in college. </p>
+        <p class="text-black">- I wrestled for about 6-7 years throughout middle school and high school. During my high school wrestling career, I volunteered at a nearby middle school and helped younger wreslters during their practice. Then later, I volunteered at a kids wrestling club put on by my high school. I earned a varsity letter and a CHSAA Scholar Athlete Award my senior year but I am not wrestling in college. </p>
         <br>
       
-    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="work">
-        <h3 class="w3-text-white">Work Experience</h3>
-        <hr style="width:200px" class="w3-opacity">  
-        <p><span class="w3-large w3-margin-right">Hip Hop and Breakdancing Teacher</span> </p>
+    <div class="content justify text-black padding-64" id="work">
+        <h3 class="text-white">Work Experience</h3>
+        <hr style="width:200px" class="opacity">  
+        <p><span class="large margin-right text-white">Hip Hop and Breakdancing Teacher</span> </p>
         <p>- I have been teaching people from age 5-18+ for the past 2 years. My class sizes are up to 20 people usually. There have been many important ideas that have come from these expereinces that have prepared me for the future. I will continue to be teaching and dancing throughout my life.  </p><br>
-        <p><span class="w3-large w3-margin-right">Golf Course Maintenance</span></p>
+        <p><span class="large margin-right text-white">Golf Course Maintenance</span></p>
         <p>- This job included Cleaning, Mowing, Greeting people. I also volunteered at these golf courses for a couple years before working there. I have learned many social skills from this job and learned different maintenance jobs. </p>
     </div>
   
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <div class="padding-64 content" id="photos">
+    <h2 class="text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="opacity">
 
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="https://jaked2k17.github.io/Resume/6844copy.jpg" style="width:50%">
         <img src="https://jaked2k17.github.io/New Resume/Jake_Durr.jpg" style="width:50%">
@@ -240,14 +292,14 @@ function showSlides() {
     </div>
   </div>
 
-  <div class="w3-padding-64 w3-content w3-text-black" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <div class="padding-64 content text-black" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Denver, Colorado US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 303-906-8019</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a title="mailto:abds@comcast.net" href="mailto:abds@comcast.net">jaked2k17@gmail.com</a><br /></p>
+    <div class="section">
+      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Denver, Colorado US</p>
+      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: 303-906-8019</p>
+        <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: <a title="mailto:abds@comcast.net" href="mailto:abds@comcast.net">jaked2k17@gmail.com</a><br /></p>
     </div><br>
   </div>
 </div>
