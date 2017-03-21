@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>Jake Durr Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    
+.w3-row-padding img {margin-bottom: 12px}
+    
+.w3-sidenav {width: 120px;background: #222;}
+    
+#main {margin-left: 120px}
+
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+<body class="w3-dark-grey">
+
+<nav class="w3-sidenav w3-center w3-small w3-hide-small">
+  <!-- <img src="https://jaked2k17.github.io/Resume/6844copy.jpg" style="width:100%"> -->
+  <a class="w3-padding-large w3-hover-black" href="#">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#about">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>About</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#work">
+    <i class="fa fa-laptop w3-xxlarge"></i>
+    <p>Work Experience</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#photos">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Photos</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#contact">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Contact</p>
+  </a>
+</nav>
+
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <li class="w3-left" style="width:25% !important"><a href="#">Home</a></li>
+            <li class="w3-left" style="width:25% !important"><a href="#about">About</a></li>
+            <li class="w3-left" style="width:25% !important"><a href="work">Work Experience</a></li>
+            <li class="w3-left" style="width:25% !important"><a href="#photos">Photos</a></li>
+            <li class="w3-left" style="width:25% !important"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="w3-padding-large" id="main">
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Jake Durr</h1>
+            <p></p>
+        </header>
+
+        <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+            <img src="https://jaked2k17.github.io/New Resume/FullSizeRender.jpg" style="width:100%">
+        <div class="text">Travel</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://jaked2k17.github.io/New Resume/DSC_6866.jpg" style="width:100%">
+        <div class="text">Wreslting</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="IMG_4604.jpg" style="width:100%">
+        <div class="text">Other</div>
+    </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+        <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+        
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); 
+}
+</script>
+        
+        
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+    <h2 class="w3-text-white">My History</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am 18 years old and I am currently a senior at Arapahoe Highschool. I have lived in Colorado my whole life but I travel all the time. My life has been filled with snowboarding, dancing, mountain biking, wrestling and many other sports. Although sports were a big part of my life, I also included myself in Boy Scouts, Volunteer Work and Programming.</p>
+    <p>After graduating High School I am attending <a href="https://www.colostate.edu/" target="_blank">Colorado State University</a>studying Computer Science in a Security field. I plan on receiving my Bachelor in Science for Computer Science and continue on to learn in more of a security field.</p>
+    </div>
+    <div><strong><u>Dancing</u></strong></div>
+          <p class="w3-text-black">- I started dancing in about 2007 where I learned some different styles including Hip Hop, Contemporary, and Breakdancing. Over the years I have gotten the chance to perform at Red Rocks, a body building competition, a couple marathons, and many other shows. I have had the chance to be a part of a dance crew. We would travel around and perform or compete against other crews. I am now teaching/subbing dance classes at a local studio. My students are around ages 6-20. I will continue dancing in college and throughout my life because it brings me happiness.</p>
+    <div><strong><u>Web Design</u></strong></div>
+        <p class="w3-text-black">- After taking a Web Design class at my high school, I started designing websites of my own. I have created many websites and created this resume using HTML, CSS, and JavaScript. I written all the code for this website as an example of some of my experience.</p>
+    <div><strong><u>Eagle Scout</u></strong></div>
+        <p class="w3-text-black">- After about 7 years in Boy Scouts, I have recieved the "Eagle Scout" Rank. My final project was building a sensory table for the Adams Camp Foundation. </p>
+    <div><strong><u>Wrestling</u></strong></div>
+        <p class="w3-text-black">- I wrestled for about 6-7 years throughout middle school and high school. During my high school wrestling career, I volunteered at a nearby middle school and helped younger wreslters during their practice. Then later, I volunteered at a kids wrestling club put on by my high school. I earned a varsity letter and a CHSAA Scholar Athlete Award my senior year but I am not wrestling in college. </p>
+        <br>
+      
+    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="work">
+        <h3 class="w3-text-white">Work Experience</h3>
+        <hr style="width:200px" class="w3-opacity">  
+        <p><span class="w3-large w3-margin-right">Hip Hop and Breakdancing Teacher</span> </p>
+        <p>- I have been teaching people from age 5-18+ for the past 2 years. My class sizes are up to 20 people usually. There have been many important ideas that have come from these expereinces that have prepared me for the future. I will continue to be teaching and dancing throughout my life.  </p><br>
+        <p><span class="w3-large w3-margin-right">Golf Course Maintenance</span></p>
+        <p>- This job included Cleaning, Mowing, Greeting people. I also volunteered at these golf courses for a couple years before working there. I have learned many social skills from this job and learned different maintenance jobs. </p>
+    </div>
+  
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://jaked2k17.github.io/Resume/6844copy.jpg" style="width:50%">
+        <img src="https://jaked2k17.github.io/New Resume/Jake_Durr.jpg" style="width:50%">
+        <img src="https://jaked2k17.github.io/New Resume/IMG_5055.jpg" style="width:50%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://jaked2k17.github.io/New Resume/IMG_1021.jpg" style="width:75%">
+        <img src="https://jaked2k17.github.io/New Resume/FullSizeRender.jpg" style="width:100%">
+        <img src="https://jaked2k17.github.io/New Resume/6890.jpg" style="width:43%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Denver, Colorado US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 303-906-8019</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a title="mailto:abds@comcast.net" href="mailto:abds@comcast.net">jaked2k17@gmail.com</a><br /></p>
+    </div><br>
+  </div>
+</div>
+</body>
+</html>
