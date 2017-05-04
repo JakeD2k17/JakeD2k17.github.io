@@ -16,14 +16,12 @@
 <link href='http://fonts.googleapis.com/css?family=Cabin|Kreon:300,400' rel='stylesheet' type='text/css'> 
 <link rel="stylesheet" type="text/css" media="all" href="http://hatcherscreative.com/wp-content/themes/Hatchers/style.css" />
 
-<!--[if IE]>
-        <link rel="stylesheet" type="text/css" href="http://hatcherscreative.com/wp-content/themes/Hatchers/css/ie.css" />
-		<script type="text/javascript" src="http://hatcherscreative.com/wp-content/themes/Hatchers/js/css3-multi-column.js"></script>
-		
-<![endif]-->
-
 <style type="text/css">
             
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";    
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -32,29 +30,6 @@
 
 .mySlides {
     display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 .text {
@@ -142,8 +117,9 @@ img.emoji {
 	text-decoration: none; 
 }
 #topnav1 li:hover, #topnav1 li.current-menu-item  { 
-	background-color: #a5efda;  
+	background-color: #9aeaf4;  
 	text-decoration: none;
+    border-radius: 15px;
   -webkit-transition: all 0.2s ease;
   -moz-transition:    all 0.2s ease;
   -ms-transition:     all 0.2s ease;
@@ -158,99 +134,490 @@ img.emoji {
 .midside   { width: 260px; margin-right: 60px;  }
 .rightside { width: 230px; }
             
-            
-</style>
-<link rel='stylesheet' id='contact-form-7-css'  href='http://hatcherscreative.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-pagenavi-css'  href='http://hatcherscreative.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js?ver=4.2.13'></script>
-<script type='text/javascript' src='http://hatcherscreative.com/wp-content/themes/Hatchers/js/htchrs.color.js?ver=1.0'></script>
-<script type='text/javascript' src='http://hatcherscreative.com/wp-content/themes/Hatchers/js/htchrs.cycle.js?ver=1.0'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://hatcherscreative.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://hatcherscreative.com/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.2.13" />
-<link rel='shortlink' href='http://hatcherscreative.com/' />
-<link rel="stylesheet" href="http://hatcherscreative.com/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.4" />
+.wrap { 
+	width: 1020px; 
+	margin: 0 auto; 
+	position: relative; 
+}
 
+.logo1   { 
+	float: left; 
+	text-indent: -9999px; 
+	width: 109px; 
+	height: 80px; 
+	background: url(http://www.abdsouth.com/ABDSouth.com/Questions_files/shapeimage_1.png) no-repeat;
+    background-size:cover;
+	margin-bottom: 30px; 
+	margin-left: 65px; 
+	opacity: 1;
+}    
+
+.header        { 
+	padding: 25px; 
+	background: #f2e2a2; 
+	position:relative; 
+	z-index:50; 
+}
+    
+.header-bg   { 
+	width: 100%; 
+	background: #fff; 
+	position:relative; 
+	z-index:50;
+}
+    
+.fixed-header-slide{ 
+	width:100%;
+	height:55px;
+	background: #f2e2a2; position:fixed;
+	top:0px;
+	z-index:25; }    
+    
+.fixed-nav li:hover, 
+#fixed-header li.current-menu-item  { 
+	background-color: #9aeaf4; 
+	text-decoration: none;
+    border-radius: 15px;
+}		
+    
+.topslice { 
+	z-index:500;
+}
+    
+.award {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	right: 5px;
+	width: 98px;
+	height: 88px;
+	background: url(images/award.png);
+}
+    
+body { 
+	background: #242a2f url(images/assets/low-footer-bg.jpg); 
+	cursor: default; 
+	position: relative;
+	}
+
+.fullwidth { 
+	width: 100%; 
+}
+    
+.content { 
+	padding-bottom: 110px; 
+	min-height: 400px; 
+	position: relative; 
+}
+    
+.container { 
+	width: 940px; 
+	padding: 0 40px 0 40px;
+}
+
+.fixed-header-wrap{
+	width:100%;
+	height:55px;
+	position:absolute;
+	bottom:0px;
+}
+
+.fixed-header { 
+	width:940px; 
+	height:55px; 
+	margin:0 auto; 
+	position:relative; 
+	z-index:1;
+}
+
+.fixed-header .fixed-header-heading{
+	float:left;
+}
+.fixed-header img { 
+	margin: 4px 0 0 60px; 
+	opacity: 1;
+}
+
+.fixed-nav { 
+	float: right; 
+	margin-right: -20px; }
+.fixed-nav li { 
+	float: left; 	
+	padding: 10px 12px; margin: 10px;
+   display:-moz-inline-stack;
+   display:inline-block;
+   zoom:1;
+   *display:inline;
+			 }
+.fixed-nav li a { 
+	color: #3f474d; 
+	text-decoration: none; }
+.fixed-nav li a:hover { 
+	text-decoration: none; 
+}	
+
+/* Footer*/
+
+.footer   { overflow: hidden; padding-bottom: 40px; }
+.footer h4 a { color: #E4EDF5;}
+.main-info-news{ overflow: hidden; margin-bottom: 20px;}
+.info-date { width: 60px; float: left;}
+.info-excrpt { float: right; max-width: 230px; }
+#foo-more { margin: 0 20px 0 0; float: right;}
+
+.underdiv {  padding-bottom: 20px; margin-bottom: 20px; background: url(images/assets/underdiv.png) left bottom no-repeat; }
+.webplace { width: 28px; height: 28px; 
+			float: left; margin: 0 0 60px 0;}	
+
+#facebook { background: url(images/assets/soc.png) 0px 0px; }
+#twitter  { background: url(images/assets/soc.png) -29px 0px; }
+
+a:hover #facebook { background: url(images/assets/soc.png) 0px -28px; }
+a:hover #twitter  { background: url(images/assets/soc.png) -29px -28px; }
+
+#rss { width: 24px; height: 24px;  background: url(images/assets/rss.png) 24px 0px; 
+	  float: left; margin-top: -20px; margin-left: 36px; }
+a:hover #rss { background: url(images/assets/rss.png) 24px -25px;  }
+
+#like { float: right;}
+.gpluss { float: right; margin-left: 20px;}
+.likee { float: right;}
+
+
+.low-footer { color: #7e8d99; padding: 20px 0; }
+#copy {  float: left; width: 400px; padding-bottom:20px; }
+
+/* Main */	
+		 
+#slider-container, .pic-container { width: 100%; background: #ffffff; }	
+#slide { width: 1020px; height: 335px; margin: 0 auto; overflow: hidden; }	
+#slnav { position: relative;}
+#forward { position: absolute; width: 25px; height: 25px; background-color: #000; top: 50%; left: 90%; z-index: 500;  }
+#backward { position: absolute; width: 25px; height: 25px; background-color: #000; top: 50%; right: 90%; z-index: 500;  }
+
+#intro { padding-bottom: 60px; padding-top: 60px; background: url(images/assets/divider.png) center bottom no-repeat; }			 
+#recent-works { background: url(images/assets/divider.png) center bottom no-repeat; 
+				padding: 20px 0 40px 0; margin-right: -20px;}
+#recent-works h4 { margin-bottom: 30px; }
+#recent-works-thumbs { }
+#recent-works-thumbs img { margin-right: 15px;}
+#recent-works-thumbs:nth-child(2){ margin-right: 0 !important;}
+#our-clients { padding: 20px 0; margin-top: 20px; }		
+#clients-logos { width: 940px; height: 59px; background: url(images/assets/clients_logos.png) top left no-repeat;
+				 margin-top: 10px;}	 
+				 
+/* Main Pictures*/	
+#pic-services { width: 1020px; height: 335px;  background: url(images/assets/service.jpg);}
+#pic-about { width: 1020px; height: 335px;  background: url(images/assets/about.jpg); }
+#pic-contact { width: 1020px; height: 335px;  background: url(images/assets/contacts.jpg); }
+.contact-bg { /*background-color: #1f2326 rgba 31, 35, 38, 1  !important; */
+background-color: #1f2326;
+background-image:
+  -webkit-radial-gradient(white, transparent 1px),
+  -webkit-radial-gradient(white, transparent 1px),
+  -webkit-radial-gradient(white, transparent 1px),
+  -webkit-radial-gradient(white, transparent 1px),
+  -webkit-radial-gradient(white, transparent 1px),
+  -webkit-radial-gradient(white, transparent 1px),
+  -webkit-radial-gradient(white, transparent 1px);
+background-size:  190px 190px, 190px 190px, 180px 180px, 170px 170px, 170px 170px, 180px 180px, 170px 170px; 
+background-position: 100px 140px, 70px 90px, 25px 30px, 40px 150px, 20px 90px, 120px 10px, 0 50px;  }
+
+.services-bg, .about-bg  { background-color: #fed638 !important; /*#fed638 rgba254,214,56,1 !important;*/}
+.pagepic { margin: 0 auto;}	
+	
+.lightning { height: 27px; width: 100%; 
+			background: url(images/assets/lightning.png) no-repeat center center;
+			margin-top: 35px;}
+
+.divider { width: 940px; height: 18px; padding-top: 74px; /* negative mrgn of section title */ }
+.divline { width: 940px; height: 6px;
+				   background: url("images/assets/divbolt.png") no-repeat scroll right top, 
+				   url("images/assets/divbolt.png") no-repeat scroll left top, 
+				   url("images/assets/divline.png") repeat-x scroll right 2px transparent; }			
+
+.skillset { font-size: 11px; text-transform: uppercase; }
+#story-text p { margin: 0 0 10px 0;}
+#team-text p { margin-bottom: 15px;  width:280px; float:right; }
+#juke { width: 115px; height: 120px; float: left; margin-right: 40px; margin-left: 20px; 
+		background: url(images/assets/juke.png) no-repeat;}
+#olly { width: 115px; height: 120px; float: left; margin-right: 40px; margin-left: 20px; 
+		background: url(images/assets/olly.png) no-repeat;}
+		
+/* Services */	
+#approach-text p { margin: 0 0 10px 0;}
+#services h3 { padding-top: 60px; text-align: center;}
+#what-we-do-text h3 {text-align: left;}
+.illo { padding-top: 180px; }
+#bc{ background: url(images/assets/bc.png) center top no-repeat;}
+#bm { background: url(images/assets/bm.png) center top no-repeat;}
+#sd{ background: url(images/assets/sd.png) center top no-repeat;}
+#te { background: url(images/assets/te.png) center top no-repeat;}
+
+/* Dividers */
+#story { margin-left: 42%;} 
+#team { margin-left: 41%;}
+#clients { margin-left: 44%;}
+#what-we-do { margin-left: 42%;}
+#approach  { margin-left: 43%;}
+				   
+/* Sliding door button */	
+.section							{ height:0; font-size: 1px; line-height: 1px; max-width: 960px; margin-top: -14px;		 }
+a.section-name span 					{ background: transparent url(images/assets/divbgd.png) no-repeat 0 0; display: block; 
+									line-height: 26px; padding: 0 25px 2px 30px;  } 								
+a.section-name						{ background: transparent url(images/assets/divbg-right.png) no-repeat top right; 
+									display: block;	float: left; height: 26px; margin: 0 auto; 
+									padding-right: 10px; }		
+
+
+.visual-project { width: 700px; float: left; }		
+
+.about-project p { margin-bottom: 10px; }
+
+.underdiv-light {  padding-bottom: 20px; margin-bottom: 20px; background: url(images/assets/underdiv-light.png) left bottom no-repeat; }	
+p.portfolio-services, p.portfolio-link { margin-top: 25px; margin-bottom: 25px; }
+.pictures_container img { margin-bottom: 20px;}
+
+.circle { width: 17px; height: 17px; margin-bottom: 5px;
+		 text-indent: -9999px; font-size: 1px; line-height: 1px; }
+.top div.circle { margin-bottom: 15px;}
+.single-project-nav.bottom { /* margin-top: -15px; */}
+.prev { float: right; background: url(images/assets/arrow.png) no-repeat 0 0; }
+.next { float: right; background: url(images/assets/arrow.png) no-repeat -19px 0;}
+.project-list { float: left; 
+				 background: url(images/assets/projectlist.png) no-repeat 0 0;}
+	
+.prev:hover {  background-position: 0 -19px;}			
+.next:hover {  background-position: -19px -19px;}
+.project-list:hover { background-position: 0 -18px; }
+
+
+
+/* Works */	
+
+.container.works { padding-top: 60px; }
+.works-div { width: 960px; height: 2px; background: url(images/assets/div-works.png); margin: 0 -10px 60px -10px; }
+.works-desc { float: left; width: 180px;  margin-bottom: 60px; margin-right: 60px; }
+.works-thumbs { float: left; width: 740px; margin-bottom: 60px; margin-right: -40px;}
+
+#pictures-project { min-height: 400px;}
+.nopic { margin: 50px 0 0 150px; }
+
+/* Portfolio Overlay */
+
+#portfolio-items li {
+	width: 210px;
+	height: 160px;
+	float: left;
+	margin: 0 20px 20px 0;
+	overflow: hidden;
+	position: relative;
+	padding: 5px;
+	background-color: #7e8d99; }
+
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 150px;
+	padding: 15px;
+	z-index: 20;
+}
+
+.post-thumb .overlay,
+.overlay { background: url(images/assets/th_yellow.png); }
+
+.active .overlay { display: block; }
+
+.overlay .arrow {
+	position: absolute;
+	bottom: 15px;
+	right: 16px;
+	width: 19px;
+	height: 19px;
+}
+.overlay .arrow { background: url(images/assets/arrow.gif) repeat; }
+
+#portfolio-items .entry-content, #main .entry-content { 
+	margin: 10px 0 0 0;
+	height: 90px; width: 190px;
+	overflow: hidden;
+	line-height: 18px;
+}
+
+.entry-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	width: 100%;
+	height: 100%; 
+}
+
+#portfolio-items a { cursor: default; }
+#portfolio-items .visible a, #portfolio-items .entry-title, #portfolio-items .entry-title a  { cursor: pointer; }
+
+/* Blog */	
+	
+#blog, #post-single, #searched, #just-archive, #just-single, #just-page, #just-category	 { width: 780px; float: left;   }
+.sidebar { width: 100px;  float: left;}
+
+.posted  { padding-top: 30px; }
+.vcard { text-transform: capitalize;}		  
+
+.widget-container { margin-bottom: 60px; margin-right: -20px;}
+.widget-title {  margin-bottom: 20px; padding-bottom: 15px; 
+				background: url(images/blog/side-div.png) left bottom no-repeat;}	
+				
+/* Comments */	
+
+.screen-reader-text { position: absolute; top: -9999px; left: -9999px; }
+
+ol#comments li { margin-top: 10px; padding-top: 20px; background: url(images/blog/comments-div.png) top center no-repeat;}
+.comment-meta { float: left; width: 230px; }
+.comment-text { padding-bottom: 30px;
+				float: left; width: 350px;}
+
+/* Comments Form */	
+				
+#comments-header { margin-bottom: 20px;  
+				 margin-top: 20px; padding-top: 20px; background: url(images/blog/comments-div.png) top center no-repeat;  }
+				
+#logedin { margin-bottom: 20px; }
+				
+textarea, input { background: #32383d; color: #ffffff; border: 1px solid #32383d;}
+textarea:focus, input:focus { border: 1px solid #fed638; outline: none;  }
+
+.injection { 	-webkit-box-shadow: inset 1px 1px 5px rgba(0,0,0,0.4);
+				-moz-box-shadow: inset 1px 1px 5px rgba(0,0,0,0.4);
+				box-shadow: inset 1px 1px 5px rgba(0,0,0,0.4);
+				border-image: initial;}
+
+#inputs { position: relative; float: left; margin-right: 60px;  }
+#inputs p { margin-bottom: 10px; }
+
+.injection { width: 160px; padding: 5px;
+			-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+							
+
+textarea#comment { max-width: 416px; padding: 10px; 
+				 -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 	  }
+
+.submission { float: right; margin-top: 20px;}	
+#comments-form button:hover { cursor: pointer;}
+#comments-form button { border: none; width: 106px; height: 28px; background: url(images/blog/submit.png) no-repeat;  }	
+.comentator {  }		
+.comment-area {  }
+
+/* Contacts*/	
+.ind { margin-left: 40px;}
+#contacts p { margin-bottom: 15px;}
+#contacts div.wcol {  width: 420px; }
+#contacts div.wcol.left { padding-right: 20px; margin-right: 40px;} 
+
+#cform { margin-top: 60px; padding-top: 30px; background: url(images/assets/divider.png) center top no-repeat; }
+
+
+/* Form */
+
+#cform input, #cform textarea{	border: 1px solid #32383d; }
+#cform textarea:focus, #contacts  input:focus { border: 1px solid #fed638; outline: none; }
+#cform input { width: 370px;}
+#cform  textarea { width: 370px; max-width: 400px; margin-top: 15px;}	
+
+#cform-fields { width: 860px; }
+.wpcf7-submit { float: right; }
+#submitter input { width: 106px; height: 29px; text-indent: -9999px; border: none;
+			background: transparent url(images/assets/submit.png) top left no-repeat; }
+
+/* 2 and 4 columns */	
+
+.wcol { width: 460px; float: left;	margin-top: 34px; padding-right: 20px; }	 /* 60px-28px+2px*/	 
+.wcol:last-of-type { padding-right: 0; }
+	
+.fcol {  width: 200px; float: left; padding-right: 30px; }
+.fcol:last-of-type { padding-right: 0;}
+
+</style>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js?ver=4.2.13'></script>
+<script type='text/javascript' src='http://hatcherscreative.com/wp-content/themes/Hatchers/js/htchrs.custom.js?ver=1.0'></script>
 </head>
 
 <body class="home page page-id-5 page-template page-template-main page-template-main-php" >
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <div class="fixed-header-slide">
 	<div class="fixed-header-wrap">
 		<div class="fixed-header">
-				<div class="fixed-header-heading">
-
-				<a href="htpps://www.abdsouth.com">
-				<img src="http://www.abdsouth.com/ABDSouth.com/Questions_files/shapeimage_1.png" style="width: 20%" alt="ABDSouth Logo" />
-				</a>
-
-				</div><!--fixed-header-heading-->
+            <div class="fixed-header-heading">
+                <a href="htpps://www.abdsouth.com">
+                <img src="http://www.abdsouth.com/ABDSouth.com/Questions_files/shapeimage_1.png" style="width: 20%" alt="ABDSouth Logo" />
+                </a>
+            </div>
 
 				<div class="fixed-header-nav">
 					<div class="fixed-nav">
-					<div class="menu-header"><ul id="menu-top-navigation" class="menu"><li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://hatcherscreative.com/about/">About</a></li>
-<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://hatcherscreative.com/services/">Services</a></li>
-<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://hatcherscreative.com/works/">Works</a></li>
-<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://hatcherscreative.com/blog/">Blog</a></li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://hatcherscreative.com/contacts/">Contacts</a></li>
-</ul></div>					</div><!--fixed-nav-->
-				</div><!--fixed-header-nav-->
-		</div><!--fixed-header-->
-	</div><!--fixed-header-wrap-->
-</div><!--fixed-header-slide-->
+					<div class="menu-header"><ul id="menu-top-navigation" class="menu"><li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://jaked2k17.github.io/ABDS/abdsmain.html">Home</a></li>
+                        <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://jaked2k17.github.io/ABDS/abdsabout.html">About</a></li>
+                        <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://jaked2k17.github.io/ABDS/abdsrates.html">Rates</a></li>
+                        <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://jaked2k17.github.io/ABDS/abdsschedule.html">Schedule</a></li>
+                        <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://jaked2k17.github.io/ABDS/abdsstaff.html">Staff</a></li>
+                        <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://jaked2k17.github.io/ABDS/abdscontacts.html">Contact</a></li>
+                        </ul>
+                    </div>					
+                    </div>
+				</div>
+		</div>
+	</div>
+</div>
 
 <div class="header-bg">
 	<div class="header">						
 		<div class="wrap"> 				
 				<a href="http://www.abdsouth.com/ABDSouth.com/Questions_files/shapeimage_1.png" title="" rel="home">
-					<div class="logo">
+					<div class="logo1">
 						<h1>
-													</h1>
+				        </h1>
 						<p></p>
-					</div><!--logo-->
+					</div>
 				</a>
 				
 				<div id="topnav1">
-					<div class="menu-header"><ul id="menu-top-navigation-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://hatcherscreative.com/about/">About</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://hatcherscreative.com/services/">Services</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://hatcherscreative.com/works/">Works</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://hatcherscreative.com/blog/">Blog</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://hatcherscreative.com/contacts/">Contacts</a></li>
-</ul></div>				</div><!--topnav1-->
-				<div class="clear"></div>
+					<div class="menu-header"><ul id="menu-top-navigation-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://jaked2k17.github.io/ABDS/abdsmain.html">Home</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://jaked2k17.github.io/ABDS/abdsabout.html">About</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://jaked2k17.github.io/ABDS/abdsrates.html">Rates</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://jaked2k17.github.io/ABDS/abdsschedule.html">Schedule</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://jaked2k17.github.io/ABDS/abdsstaff.html">Staff</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://jaked2k17.github.io/ABDS/abdscontacts.html">Contact</a></li>
+                        </ul>
+                    </div>				
+                </div>
+            <div class="clear"></div>
 		</div>
 	</div> 
 </div> 
 
-        <div class="slideshow-container">
-        <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-            <img src="http://www.abdsouth.com/ABDSouth.com/ABDS_Home_files/shapeimage_1.png" style="width:100%">
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext" >1 / 3</div>
+            <img src="https://jaked2k17.github.io/ABDS/frontarea.jpg" style="width:40%">
         <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="http://www.abdsouth.com/ABDSouth.com/Questions_files/shapeimage_1.png" style="width:100%">
-        <div class="text"></div>
-    </div>
+<div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+        <img src="https://jaked2k17.github.io/ABDS/fullstudio.jpg" style="width:50%">
+    <div class="text"></div>
+</div>
 
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="http://www.abdsouth.com/ABDSouth.com/Questions_files/DSC04381.jpg" style="width:100%">
-        <div class="text"></div>
-    </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+        <img src="https://jaked2k17.github.io/ABDS/frontdesk.jpg" style="width:50%">
+    <div class="text"></div>
+</div>
     </div>
         <br>
 
@@ -259,6 +626,7 @@ img.emoji {
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
+    
 <script>
 var slideIndex = 0;
 showSlides();
@@ -279,159 +647,145 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); 
 }
-    
 </script>
 
-<div class="content"><div class="wrap">
-<div id="main" class="container">
-				<div id="intro" class="textshadow"><p class="textshadow">Myopattering™ is a Pilates-based system of exercises designed to develop strength, flexibility, balance, and body placement.  We work on core strength (abdominal and back), foot and ankle strength, hip stability, hamstring strength and flexibility, and upper body strength.  We work on Reformer machines and can accommodate 15 people per class which makes classes easy to follow, fun to do, and cost effective.  Your body can start to change and feel results after the first class.</p>
-		</div>
-		<div id="recent-works">
-		<h4 class="textshadow">Photos</h4>
-		
-			<div id="recent-works-thumbs">
-			
-<ul id="portfolio-items" class="clearfix"> 
-
-<li id="portfolio-5" class="visible">
-		<div>
-			<a class="entry-link" href=""></a>
-			<img src="" alt="Home" />			
-			<div class="overlay">
-				<span class="entry-title"><a href="">Something</a></span>                                
-				<div class="entry-content">
-					Something else
-				</div>
-				<div class="arrow"></div>
-			</div> 
-		</div>
-</li>	
-
-<li id="portfolio-5" class="visible">
-		<div>
-			<a class="entry-link" href=""></a>
-			<img src="" alt="Home" />			
-			<div class="overlay">
-				<span class="entry-title"><a href="">Our Machines</a></span>                                
-				<div class="entry-content">
-					Most of your class will be spent working on these.	
-				</div>
-				<div class="arrow"></div>
-			</div> 
-    </div>
-</li>
-    
-<li id="portfolio-5" class="visible">
-		<div>
-			<a class="entry-link" href=""></a>
-			<img src="" alt="Home" />			
-			<div class="overlay">
-				<span class="entry-title"><a href="">Our Studio</a></span>                                
-				<div class="entry-content">
-					Full of many machines, fans, and exercise equitment.	
-				</div>
-				<div class="arrow"></div>
+<div class="content">
+    <div class="wrap">
+        <div id="main" class="container">
+            <div id="intro" class="textshadow"><p class="textshadow">Myopattering™ is a Pilates-based system of exercises designed to develop strength, flexibility, balance, and body placement.  We work on core strength (abdominal and back), foot and ankle strength, hip stability, hamstring strength and flexibility, and upper body strength.  We work on Reformer machines and can accommodate 15 people per class which makes classes easy to follow, fun to do, and cost effective.  Your body can start to change and feel results after the first class.</p>
             </div>
-		</div>
-</li>
-    
-<li id="portfolio-5" class="visible">			
-		<div>	
-			<a class="entry-link" href=""></a>
-			<img src="" alt="Home" />		
-			<div class="overlay">
-				<span class="entry-title"><a href="">Staff</a></span>                                
-				<div class="entry-content">
-					This is some of our staff!
-				</div>
-				<div class="arrow"></div>
-			</div> 
-		</div>
-</li>		
-</ul>			
-			</div>
-		</div>
+                <div id="recent-works">
+                <h4 class="textshadow">Photos</h4>
+                <div id="recent-works-thumbs">
+			
+                <ul id="portfolio-items" class="clearfix"> 
 
+                <li id="portfolio-5" class="visible" style="width:160px">
+                    <div>
+                        <a class="entry-link" href=""></a>
+                        <img src="https://jaked2k17.github.io/ABDS/babyball.jpg" alt="Home" style="width:100%" />		<div class="overlay">
+				            <span class="entry-title"><a href="">Something</a></span>                                
+				            <div class="entry-content">
+					           Something else
+				            </div>
+				            <div class="arrow"></div>
+                        </div> 
+                    </div>
+                </li>	
+
+                <li id="portfolio-5" class="visible" style="width:160px">
+                    <div>
+                        <a class="entry-link" href=""></a>
+                        <img src="https://jaked2k17.github.io/ABDS/babymachine.jpg" alt="Home" style="width:100%" />		<div class="overlay">
+                            <span class="entry-title"><a href="">Our Machines</a></span>                                
+                            <div class="entry-content">
+                                Most of your class will be spent working on these.	
+                            </div>
+                            <div class="arrow"></div>
+                        </div> 
+                    </div>
+                </li>
+    
+                <li id="portfolio-5" class="visible" style="width:160px">
+                    <div>
+                        <a class="entry-link" href=""></a>
+                        <img src="https://jaked2k17.github.io/ABDS/babywall.jpg" alt="Home" style="width:100%" />		<div class="overlay">
+                            <span class="entry-title"><a href="">Our Studio</a></span>                                
+                            <div class="entry-content">
+                                Full of many machines, fans, and exercise equitment.	
+                            </div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </li>
+    
+                <li id="portfolio-5" class="visible" style="width:160px">			
+                    <div>	
+                        <a class="entry-link" href=""></a>
+                        <img src="https://jaked2k17.github.io/ABDS/babyweights.jpg" alt="Home" style="width:100%" />		
+                        <div class="overlay">
+                            <span class="entry-title"><a href="">Staff</a></span>                                
+                            <div class="entry-content">
+                                This is some of our staff!
+                            </div>
+                            <div class="arrow"></div>
+                        </div> 
+                    </div>
+                </li>		
+                </ul>			
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
+    
 <div class="footer"><div class="wrap">
 	<div class="container">
         <div class="coldad">
             <div class="lmrside leftside">
 				<div id="recent">
-				    <div class="underdiv"><h4><a href="/blog">More</a></h4><a href=""><div id="rss"></div></a></div>
-				        <div id="blog-on-main">													
-								<div class="main-blog-news">
-								 <p class="blog-date">Something</p> 
-								    <a href="" rel="bookmark" title="Something">  
-									  <div class="blog-excrpt">
-										<p>something else<a href=""></a></p>
-									  </div></a>
-                                </div>
+				    <div class="underdiv"><h4>More</h4><a href="">
+                        <div id=""></div></a></div>
+				        <div id="blog-on-main">
+				            <div class="main-info-news">
+								<p class="info-date">Something</p> 
+				                <a href="" rel="bookmark" title="">  
+								    <div class="info-excrpt">
+                                        <p>Something else<a href=""></a></p>
+                                    </div>
+                                </a>
+				            </div>
+																														
+				            <div class="main-info-news">
+				                <p class="info-date">Something</p> 
+				                <a href="" rel="bookmark" title="">  
+								    <div class="info-excrpt">
+								        <p> Something Else <a href=""></a></p>
+                                    </div>
+                                </a>
+				            </div>
 
-                                <div class="main-blog-news">
-								 <p class="blog-date">Something</p> 
-								    <a href="" rel="bookmark" title="Something">  
-									  <div class="blog-excrpt">
-										<p>Something else<a href=""></a></p>
-									  </div></a>
-                                </div>
-                            
-                                <div class="main-blog-news">
-								 <p class="blog-date">Something</p> 
-								    <a href="" rel="bookmark" title="Something">  
-									  <div class="blog-excrpt">
-										<p>Something else <a href=""></a></p>
-									  </div></a>
-                                </div>
+				            <div class="main-info-news">
+								<p class="info-date">Something</p> 
+								<a href="" rel="bookmark" title="">  
+								    <div class="info-excrpt">
+								        <p>Something else <a href=""></a></p>
+                                    </div>
+                                </a>
+				            </div>
 
-								<div class="clear"></div>
-								<div id="foo-more"><a href="/blog" title="More">more...</a></div>
-				    </div>
-                </div>
-            </div>
+				            <div class="clear"></div>
+				            <div id="foo-more"><a href="" title="">more...</a></div>
+				        </div>
+                    </div>
+				</div>
 				
-<div class="lmrside midside">
-    <div id="web" class="group">
-        <div class="underdiv">
-            <h4>Social Media</h4>	
-        </div>
-        <a href=""><div id="facebook" class="webplace"></div></a>
-        <a href=""><div id="twitter" class="webplace"></div></a>	
+						<div class="lmrside midside">
+								<div id="web" class="group">
+									<div class="underdiv">
+									<h4>Social Media</h4>	
+									</div>
+									
+									<a href=""><div id="facebook" class="webplace"></div></a>
+                                    <a href=""><div id="twitter" class="webplace"></div></a>
+								</div>
+						
+						</div>
+						<div class="lmrside rightside">
+								<div id="contacts">
+								    <div class="underdiv"><h4>Contacts</h4></div>	
+								        <li id="text-3" class="widget widget_text">			
+                                            <div class="textwidget">Phone: (303)  694-6655 <br />
+                                                Email: <a href="mailto:abds@comcast.net<">abds@comcast.net</a> <br />
+                                            </div>
+                                        </li>
+								</div>
+						</div>
+			</div>
+	   </div>
     </div>
 </div>
-
-<div class="lmrside rightside">
-    <div id="contacts">
-        <div class="underdiv"><h4><a href="/contacts">Contacts</a></h4></div>							
-				<li id="text-3" class="widget widget_text">			
-                    <div class="textwidget">Phone: (303) 694-6655<br /><br />
-                        Email: <a href="mailto:<">abds@comcast.net</a> <br />
-		      </li>
-
-				    </div>
-            </div>
-        </div>
-	</div>
-</div></div>
-
-	</div>
-</div></div>
-
-<script type='text/javascript' src='http://hatcherscreative.com/wp-content/themes/Hatchers/js/htchrs.custom.js?ver=1.0'></script>
-<script type='text/javascript' src='http://hatcherscreative.com/wp-content/themes/Hatchers/js/smoothscroll.js?ver=1.0'></script>
-<script type='text/javascript' src='http://hatcherscreative.com/wp-includes/js/comment-reply.min.js?ver=4.2.13'></script>
-<script type='text/javascript' src='http://hatcherscreative.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/hatcherscreative.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://hatcherscreative.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.2.1'></script>
  			
 </body>
 
 </html>
-<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
-
- Served from: hatcherscreative.com @ 2017-03-23 23:22:52 by W3 Total Cache -->
